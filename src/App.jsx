@@ -6,7 +6,7 @@ function App() {
 
   const [amount,setAmount] = useState(10000)
   const [months,setMonths] = useState(2)
-  const [total, setTotal]= useState(0)
+  const [total, setTotal]= useState(10200)
   const [installment,setInstallment] = useState(5100)
 
   const amountChange = (e)=>{
