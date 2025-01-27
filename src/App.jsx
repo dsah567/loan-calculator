@@ -13,14 +13,14 @@ function App() {
     setAmount(e.target.value)
     let si= (e.target.value*months*8)/(12*100)
     setTotal(si+e.target.value)
-    setInstallment(total/months)
+    setInstallment(e.target.value/months)
   }
 
   const monthChange = (e)=>{
     setMonths(e.target.value)
     let si= (e.target.value*amount*8)/(12*100)
     setTotal(si+amount)
-    setInstallment(total/months)
+    setInstallment(total/e.target.value)
   }
 
   return (
